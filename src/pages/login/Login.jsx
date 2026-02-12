@@ -16,7 +16,6 @@ export default function login() {
                     <button className="loginButton">Log In</button>
                     <span className="loginForgot">Forgot Password?</span>
                     <button className="loginRegisterButton">Create a New Account</button>
-
                 </div>
             </div>
         </div>

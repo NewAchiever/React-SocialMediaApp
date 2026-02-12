@@ -1,5 +1,5 @@
 import "./share.css"
-import { PermMedia, Label, Room, EmojiEmotions } from "@material-ui/icons"
+import { PermMedia, Label, Room, EmojiEmotions } from "@mui/icons-material"
 export default function Share() {
   return (
     <div className="share">
@@ -8,7 +8,7 @@ export default function Share() {
                 <img src="/assets/person/p_pic.jpg" alt="" className="shareProfileImg" />
                 <input type="text" placeholder="What's in your mind!" className="shareInput" />
             </div>
-            <hr className="shareHr" />
+            
             <div className="shareBottom">
                 <div className="shareOptions">
                     <div className="shareOption">

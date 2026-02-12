@@ -1,12 +1,15 @@
 import "./topbar.css"
-import { Search, Person, Chat, Notifications } from "@material-ui/icons";
-export default function Topbar() {
+import { Search, Person, Chat, Notifications } from "@mui/icons-material";
+export default function Topbar({data}) {
+  
   return (
       <div className="topbarContainer">
         <div className="topbarLeft">
           <span className="topbarLogo">Sociallly</span>
         </div>
-        <div className="topbarCenter">
+        { data.isActiveUser ? (
+          <>
+                  <div className="topbarCenter">
           <div className="searchBar">
             <Search className="topbarsearchIcon"/>
             <input type="text" Placeholder="Search for anything" class="searchInput" id="" />
@@ -31,11 +34,13 @@ export default function Topbar() {
             <Notifications/>
             <span className="topbarIconBadge">1</span>
           </div>
-        
           </div>
           <img src="/assets/person/p_pic.jpg" alt="" className="topbarImg" />
 
         </div>
+</>
+        ) : (<></>)
+      }
         
       </div>
   )

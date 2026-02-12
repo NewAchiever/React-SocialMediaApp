@@ -1,6 +1,6 @@
 .share{
     
-    height: 170px;
+    
     border-radius: 10px;
     margin: 0 15px 0 15px;
     box-shadow: 0 0 16px -8px rgba(0, 0, 0, 0.685);
@@ -20,9 +20,19 @@
 
 }
 
+.shareTop{
+   
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
 .shareInput{
     border: none;
-    width: 80%;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    width: 100%;
+    padding: 5px;
+    
 }
 
 .shareInput:focus{
@@ -34,14 +44,15 @@
 }
 
 .shareBottom{
+    margin: 10px 5px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .shareOptions{
     display :flex;
-    margin-left: 20px;
+    justify-content: space-between;
+    margin-left: 5px
 }
 .shareOption{
     display: flex;
@@ -65,8 +76,8 @@
     border: none;
     padding: 7px;
     border-radius: 5px;
+    margin-left:auto;
     background-color: green;
     font-weight: 500;
-    margin-right: 20px;
     color: white;
  }

@@ -1,5 +1,5 @@
 import "./sidebar.css"
-import { RssFeed, HelpOutline, WorkOutline, Event, School, Bookmark, Group, PlayCircleFilledOutlined, Chat } from "@material-ui/icons"
+import { RssFeed, HelpOutline, WorkOutline, Event, School, Bookmark, Group, PlayCircleFilledOutlined, Chat } from "@mui/icons-material"
 import {Users} from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend"
 export default function Sidebar() {
