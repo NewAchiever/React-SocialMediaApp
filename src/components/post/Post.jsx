@@ -1,6 +1,7 @@
 import { MoreVert } from "@mui/icons-material"
 import "./post.css"
 import PostMenu from "../postMenu/PostMenu";
+import Comments from "../comment/Comments"
 import {Users} from "../../dummyData"
 import { useState, useEffect, useRef } from "react";
 
@@ -11,28 +12,32 @@ export default function Post({post}) {
     setLike(isLiked ? like-1:like+1)
     setIsLiked(!isLiked)
   }
-
+  const [showComments, setShowComments] = useState(false);
   const [showPostMenu, setShowPostMenu] = useState(false);
-  
-    const postMenuRef = useRef(null);
-  
-    const handlePostMenu = () => {
-      setShowPostMenu(!showPostMenu);
+
+  const postMenuRef = useRef(null);
+
+  const handlePostMenu = () => {
+    setShowPostMenu(!showPostMenu);
+  }
+
+  const handleClickOutside = (event) => {
+    if (postMenuRef.current && !postMenuRef.current.contains(event.target)) {
+      setShowPostMenu(false);
     }
-  
-    const handleClickOutside = (event) => {
-      if (postMenuRef.current && !postMenuRef.current.contains(event.target)) {
-        setShowPostMenu(false);
-      }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
     };
-  
-    useEffect(() => {
-      document.addEventListener('mousedown', handleClickOutside);
-      return () => {
-        document.removeEventListener('mousedown', handleClickOutside);
-      };
-    }, []);
-  
+  }, []);
+
+  const handleCommentsSection = () => {
+    setShowComments(!showComments);
+  }
+
 
   return (
     <div className="post">
@@ -59,7 +64,8 @@ export default function Post({post}) {
               <div className="postLikeCounter">{like} people Liked it.</div>
             </div>
             <div className="postBottomRight">
-              <span className="postCommentText">{post.comment} Comments</span>
+              <span className="postCommentText" onClick={handleCommentsSection}>{post.comment} Comments</span>
+              {showComments && <Comments postId={post.id} closeComments={handleCommentsSection}/>}
             </div>
           </div>
         </div>

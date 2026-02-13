@@ -138,7 +138,7 @@ export const Users = [
     },
   ];
 
-  export const Comments = [
+  export const dummyComments = [
     {
       "postId": 1,
       "comments": [
