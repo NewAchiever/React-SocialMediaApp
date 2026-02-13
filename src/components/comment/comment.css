@@ -1,0 +1,64 @@
+.commentsSection {
+    position: fixed;
+    z-index:10;
+    right: 20px;
+    top: 100px;
+    height: 450px;
+    width: 450px;
+    border-radius: 5px;
+    background-color: rgb(218, 218, 218);
+    
+}
+.commentsProfileImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.commentsWrapper{
+    background-color: white;
+    height: calc(100% - 84px);
+    margin:0px 10px;
+    overflow-y: auto;
+}
+
+.commentsRow{
+    display: flex;
+    margin: 5px 2px;
+}
+
+.commentsProfileImgWrapper{    
+    width: 40px;
+}
+
+.commentsUsernameNdCommentsWrapper{
+    margin: 0 5px;
+}
+
+.commentsSectionHeading{
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.closeIcon{
+    cursor: pointer;
+}
+
+.addCommentSection{
+    display: flex;
+    margin: 10px 10px;
+}
+.inputComment{
+    flex:10;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+}
+.sendIcon{
+    flex:1;
+    cursor: pointer;
+}
