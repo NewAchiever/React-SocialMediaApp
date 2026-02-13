@@ -291,3 +291,45 @@ export const Users = [
     }
   ]
 
+export const  Notifications = [
+    {
+      "notificationId": 1,
+      "message": "Aarav liked your post."
+    },
+    {
+      "notificationId": 1,
+      "message": "Sophia commented on your post: \"Amazing picture!\""
+    },
+    {
+      "notificationId": 2,
+      "message": "Liam sent you a friend request."
+    },
+    {
+      "notificationId": 3,
+      "message": "Emma sent you a new message."
+    },
+    {
+      "notificationId": 1,
+      "message": "Noah commented on your post: \"Great insights!\""
+    },
+    {
+      "notificationId": 2,
+      "message": "Olivia sent you a friend request."
+    },
+    {
+      "notificationId": 3,
+      "message": "James sent you a new message."
+    },
+    {
+      "notificationId": 1,
+      "message": "Isabella liked your post."
+    },
+    {
+      "notificationId": 3,
+      "message": "Mason sent you a new message."
+    },
+    {
+      "notificationId": 2,
+      "message": "Mia sent you a friend request."
+    }
+  ]
