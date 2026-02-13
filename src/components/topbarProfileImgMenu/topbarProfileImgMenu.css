@@ -1,0 +1,28 @@
+.profileMenu{
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 5px;
+    position:absolute;
+    right: 0;
+    width: 150px;
+    box-shadow: 1px 1px 1px 1px rgb(154, 154, 154);
+}
+
+.profileMenuList{
+    padding: 0;
+    color:black;
+    list-style: none;
+    
+}
+
+.profileMenuList > li {
+    padding: 10px 10px;
+    border-bottom: 1px solid rgb(158, 158, 158);
+    display: flex;
+    align-items: center;
+}
+
+.profileMenuList > li:hover{
+    cursor: pointer;
+    background-color: rgb(215, 214, 214);
+}
