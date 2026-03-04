@@ -9,7 +9,7 @@ export default function Rightbar() {
             <div className="birthdayContainer">
                 <img src="/assets/gift.png" alt="" className="birthdayImg" />
                 <span className="birthdayText">
-                    <b>Rutvik Raval</b> and <b>3 other friends </b> have a birthday today.
+                    <b>Raj Shah</b> and <b>3 other friends </b> have a birthday today.
                 </span>
             </div>
             <img src="/assets/ad.jpg" alt="" className="rightbarAd" />

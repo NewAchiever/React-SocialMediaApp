@@ -1,6 +1,6 @@
 export const dummydata ={ 
     isActiveUser: true,
     isUserLoggedIn: true,
-    userName: "Bhartendu"
+    userName: "Peter"
 }
 
